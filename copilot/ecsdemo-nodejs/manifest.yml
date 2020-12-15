@@ -26,7 +26,7 @@ cpu: 256
 # Amount of memory in MiB used by the task.
 memory: 512
 # Number of tasks that should be running in your service.
-count: 1
+count: 3
 
 # Optional fields for more advanced use-cases.
 #
@@ -37,8 +37,8 @@ count: 1
 #  GITHUB_TOKEN: GITHUB_TOKEN  # The key is the name of the environment variable, the value is the name of the SSM      parameter.
 
 # You can override any of the values defined above by environment.
-#environments:
-#  test:
-#    count: 2               # Number of tasks to run for the "test" environment.
+environments:
+  test:
+    count: 2               # Number of tasks to run for the "test" environment.
 variables:
   AWS_DEFAULT_REGION: ap-southeast-2
